@@ -80,3 +80,59 @@ select firstname,
 from Employees
 order by birthdate;
 */
+
+-- Problem 11: Showng only the Date with a DateTime field
+-- select firstname, 
+--     lastname, 
+--     title,
+--     convert(date, BirthDate) as DateOnlyBirthDate
+-- from Employees
+-- order by birthdate;
+
+-- Problem 12:
+-- select Employees.FirstName, Employees.LastName, 
+-- CONCAT(Employees.FirstName, ' ', Employees.LastName) as Fullname
+-- from Employees;
+
+-- Problem 13:
+-- select orderid, 
+-- productid,
+-- unitprice,
+-- quantity,
+-- (unitprice*quantity) as totalprice 
+-- from OrderDetails;
+
+-- Problem 14:
+-- select count(customers.CustomerID) as totalcustomers from customers;
+
+-- Problem 15:
+-- select min(orders.OrderDate) as firstorder
+-- from  orders;
+
+-- Problem 16:
+-- select distinct(customers.Country) from customers;
+
+-- Problem 17:
+-- select distinct(customers.ContactTitle),
+-- count(*) as totalcontacttitle
+-- from customers
+-- group by ContactTitle
+-- order by totalcontacttitle desc;
+
+-- Problem 18:
+-- select a.productID, a.productname, 
+-- b.companyname as supplier
+-- from products a
+-- left join suppliers b 
+-- on a.SupplierID = b.SupplierID;
+
+
+
+-- Problem 19:
+-- select a.orderID, 
+--     convert(date, a.OrderDate) as OrderDate, 
+--     b.CompanyName as Shipper
+-- from orders a 
+-- left JOIN Shippers b 
+-- on a.ShipVia = b.ShipperID
+-- where a.OrderID < 10270;
