@@ -1,0 +1,6 @@
+﻿CustomerGroupName,RangeBottom,RangeTop
+Low,0.00,999.9999
+Medium,1000.00,4999.9999
+High,5000.00,9999.9999
+Very High,10000.00,922337203685477.5807
+
